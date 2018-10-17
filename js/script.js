@@ -1,6 +1,6 @@
 // FSJS - Random Quote Generator
 
-// Array of quotes
+// Array of quote objects
 let quotes = [
   {
     quote: 'Why do we fall? So we can learn to pick ourselves up.',
@@ -45,13 +45,13 @@ let quotes = [
 ];
 
 
-// Create the getRandomQuuote function and name it getRandomQuote
+// Returns a random guote from the "quotes" array
 function getRandomQuote(array){
   let randomNumber = Math.floor((Math.random() * array.length));
   return array[randomNumber];
 }
 
-// Create the printQuote funtion and name it printQuote
+// Prints the random quote from "getRandomQuote" fuction to the page
 function printQuote(){
   let randomQuote = getRandomQuote(quotes);
   let message = '';
@@ -64,12 +64,11 @@ function printQuote(){
     message += '<span class="year">' + randomQuote.year + '</span>';
   }
   message += '</p>';
-  document.getElementById('quote-box').innerHTML = message;     
+  document.getElementById('quote-box').innerHTML = message;   
 }
 
 
-// This event listener will respond to "Show another quote" button clicks
-// when user clicks anywhere on the button, the "printQuote" function is called
+// Calls the "printQuote" function when the "Show another quote" button is clicked
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
