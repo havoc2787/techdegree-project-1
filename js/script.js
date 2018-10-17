@@ -1,6 +1,6 @@
 // FSJS - Random Quote Generator
 
-// Create the array of quote objects and name it quotes
+// Array of quotes
 let quotes = [
   {
     quote: 'Why do we fall? So we can learn to pick ourselves up.',
@@ -46,8 +46,10 @@ let quotes = [
 
 
 // Create the getRandomQuuote function and name it getRandomQuote
-
-
+function getRandomQuote(array){
+  randomNumber = Math.floor((Math.random() * quotes.length));
+  return array[randomNumber];
+}
 
 // Create the printQuote funtion and name it printQuote
 
