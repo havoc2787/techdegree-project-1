@@ -1,6 +1,7 @@
 // FSJS - Random Quote Generator
 
 let rgbColor;
+let refresh = setInterval(printQuote, 5000);
 
 // Array of quote objects
 let quotes = [
@@ -114,7 +115,6 @@ function printQuote(){
 
 
 // Calls "printQuote" function after 20s
-setInterval(printQuote, 20000);
 
 
 // Calls the "printQuote" function when the "Show another quote" button is clicked
