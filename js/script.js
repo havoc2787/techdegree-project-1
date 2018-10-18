@@ -1,5 +1,7 @@
 // FSJS - Random Quote Generator
 
+let rgbColor;
+
 // Array of quote objects
 let quotes = [
   {
@@ -69,7 +71,9 @@ function randomColor(){
 
 
 // Prints the random quote from "getRandomQuote" fuction to the page
+// And changes backgound/button color to randon color using "RandomColor" function
 function printQuote(){
+  rgbColor = randomColor();
   let randomQuote = getRandomQuote(quotes);
   let message = '';
   message += '<p class="quote">' + randomQuote.quote + '</p>';
@@ -81,7 +85,9 @@ function printQuote(){
     message += '<span class="year">' + randomQuote.year + '</span>';
   }
   message += '</p>';
-  document.getElementById('quote-box').innerHTML = message;   
+  document.getElementById('quote-box').innerHTML = message;
+  document.getElementById('loadQuote').style.backgroundColor = rgbColor;
+  document.getElementById('main-body').style.backgroundColor = rgbColor;
 }
 
 
