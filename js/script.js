@@ -91,6 +91,10 @@ function printQuote(){
 }
 
 
+// Calls "printQuote" function after 20s
+setInterval(printQuote, 20000);
+
+
 // Calls the "printQuote" function when the "Show another quote" button is clicked
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
