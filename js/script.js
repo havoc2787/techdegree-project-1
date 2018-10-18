@@ -43,6 +43,16 @@ let quotes = [
     source: 'Kanye West',
     citation: 'Twitter',
     year: 2014
+  },
+  {
+    quote: 'The universe is under no obligation to make sense to you.',
+    source: 'Neil Degrasse Tyson'
+  },
+  {
+    quote: 'Oh yes, the past can hurt. But the way I see it, you can either run from it, or... learn from it.',
+    source: 'Rafiki',
+    citation: 'The Lion King',
+    year: 1994
   }
 ];
 
