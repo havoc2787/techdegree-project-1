@@ -51,6 +51,23 @@ function getRandomQuote(array){
   return array[randomNumber];
 }
 
+
+// Returns a random number from 1-255 for RGB color value
+function randomRGB(){
+  return Math.floor(Math.random() * 256);
+}
+
+
+// Returns random RGB color value using "randomRGB" function
+function randomColor(){
+  let color = 'rgb(';
+  color += randomRGB() + ', ';
+  color += randomRGB() + ', ';
+  color += randomRGB() + ')';
+  return color;
+}
+
+
 // Prints the random quote from "getRandomQuote" fuction to the page
 function printQuote(){
   let randomQuote = getRandomQuote(quotes);
