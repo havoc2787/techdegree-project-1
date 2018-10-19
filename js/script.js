@@ -94,9 +94,9 @@ function randomColor(){
 // Prints the random quote from "getRandomQuote" fuction to the page
 // And changes backgound/button color to randon color using "RandomColor" function
 function printQuote(){
-  rgbColor = randomColor();
   let randomQuote = getRandomQuote(quotes);
   let message = '';
+  rgbColor = randomColor();
   message += '<p class="quote">' + randomQuote.quote + '</p>';
   message += '<p class="source">' + randomQuote.source; 
   if (randomQuote.citation){
