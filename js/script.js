@@ -1,6 +1,7 @@
 // FSJS - Random Quote Generator
 
 let rgbColor;
+// Calls "printQuote" function after 20s
 let refresh = setInterval(printQuote, 5000);
 
 // Array of quote objects
@@ -112,9 +113,6 @@ function printQuote(){
   document.getElementById('loadQuote').style.backgroundColor = rgbColor;
   document.getElementById('main-body').style.backgroundColor = rgbColor;
 }
-
-
-// Calls "printQuote" function after 20s
 
 
 // Calls the "printQuote" function when the "Show another quote" button is clicked
