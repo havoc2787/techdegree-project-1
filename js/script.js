@@ -2,7 +2,7 @@
 
 let rgbColor;
 // Calls "printQuote" function after 20s
-let refresh = setInterval(printQuote, 5000);
+let refresh = setInterval(printQuote, 20000);
 
 // Array of quote objects
 let quotes = [
